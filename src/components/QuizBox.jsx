@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const QuizBox = ({ quiz }) => {
     const { id, name, logo, total } = quiz;
+
 
     return (
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
@@ -34,13 +36,14 @@ const QuizBox = ({ quiz }) => {
                     Sed ut perspiciatis unde omnis iste natus error sit sed quia
                     consequuntur magni voluptatem doloremque.
                 </p>
-                <a
-                    href="/"
-                    aria-label=""
-                    className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 btn btn-info text-white"
+                <Link
+                    to={`/home/${ id }`}
+
+                    className=
+                    "inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 btn btn-info text-white"
                 >
                     Start Now
-                </a>
+                </Link>
             </div>
         </div>
     );

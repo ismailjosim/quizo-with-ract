@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import QuizBox from './QuizBox';
 import { QuizDataContext } from './Root';
 
 const Home = () => {
     const allQuiz = useContext(QuizDataContext);
+    const quiz = useLoaderData();
 
     return (
         <div>
