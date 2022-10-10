@@ -4,7 +4,16 @@ import Item from './Item';
 
 const QuestionBox = ({ questionItems }) => {
     const { options, id, question, correctAnswer } = questionItems;
-    // console.log(questionItems);
+
+    const handleOption = (option) => {
+        const userAns = option;
+        if (userAns === correctAnswer) {
+            alert("Correct Ans!")
+        } else {
+            alert("Wrong!")
+        }
+
+    }
 
 
     return (
@@ -17,7 +26,7 @@ const QuestionBox = ({ questionItems }) => {
             </div>
 
             {
-                options.map((option, index) => <Item key={index} option={option}></Item>)
+                options.map((option, index) => <Item key={index} option={option} handleOption={handleOption}></Item>)
             }
 
 

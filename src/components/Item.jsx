@@ -1,15 +1,12 @@
 import React from 'react';
 
-const Item = ({ option }) => {
+const Item = ({ option, handleOption }) => {
 
     return (
-
-        <div className="form-control">
-            <label className=" flex items-center gap-3 my-3 cursor-pointer">
-                <input type="radio" name="radio-6" className="radio checked:bg-red-500" checked />
-                <span className="label-text active:text-red-500">{option}</span>
-            </label>
-        </div>
+        <button onClick={() => handleOption(option)} className=" flex items-center gap-3 my-3 cursor-pointer hover:bg-slate-300">
+            <input type="radio" name="radio-6" className="radio" />
+            <span className="label-text active:text-red-500">{option}</span>
+        </button>
 
     );
 };
