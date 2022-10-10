@@ -7,7 +7,6 @@ const Item = ({ option, handleOption }) => {
             <input type="radio" name="radio-6" className="radio" />
             <span className="label-text active:text-red-500">{option}</span>
         </button>
-
     );
 };
 
