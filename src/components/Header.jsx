@@ -84,8 +84,8 @@ export const Headers = () => {
             </svg>
           </button>
           {isMenuOpen && (
-            <div className="absolute top-0 left-0 w-full">
-              <div className="p-5 bg-white border rounded shadow-sm">
+            <div className="absolute top-0 left-0 w-full z-20">
+              <div className="p-5 bg-white border rounded shadow-md">
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <Link
@@ -94,7 +94,7 @@ export const Headers = () => {
                       title="Quizo"
                       className="inline-flex items-center"
                     >
-                      <span className="ml-2 text-2xl font-bold tracking-wide text-gray-800 uppercase">
+                      <span className="ml-2 text-2xl font-bold tracking-wide text-cyan-500 uppercase">
                         Quizo
                       </span>
                     </Link>

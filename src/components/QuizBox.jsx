@@ -6,13 +6,13 @@ const QuizBox = ({ quiz }) => {
 
 
     return (
-        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+        <div className="overflow-hidden transition-shadow duration-300 border-2 border-transparent rounded-md">
             <img
                 src={logo}
-                className="object-cover w-full h-64"
+                className="object-cover w-full h-64 bg-cyan-700"
                 alt=""
             />
-            <div className="p-5 border border-t-0">
+            <div className="p-5 border-2 border-t-0  border-cyan-500 rounded-t-none rounded-md">
                 <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
                     <a
                         href="/"
@@ -32,9 +32,8 @@ const QuizBox = ({ quiz }) => {
                 >
                     {name}
                 </a>
-                <p className="mb-2 text-gray-700">
-                    Sed ut perspiciatis unde omnis iste natus error sit sed quia
-                    consequuntur magni voluptatem doloremque.
+                <p className="mb-3 text-gray-700 text-justify">
+                    Programming is a skill best acquired by practice and example rather than from books. Fix the cause, not the symptom. Make it work, make it right, make it fast.
                 </p>
                 <Link
                     to={`/home/${ id }`}
