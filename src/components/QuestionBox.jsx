@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import Swal from 'sweetalert2'
 import Item from './Item';
@@ -17,7 +16,11 @@ const QuestionBox = ({ questionItems }) => {
     }
 
     const handleRightAnswer = () => {
-        Swal.fire(`${ correctAnswer }`);
+        Swal.fire(
+            '',
+            ` Correct answer is: ${ correctAnswer }`,
+            'question'
+        );
     }
 
 

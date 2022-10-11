@@ -4,7 +4,6 @@ import Home from '../Home';
 import Root from '../Root';
 import Statistics from '../Statistics';
 import About from '../About';
-import QuizBox from '../QuizBox';
 import QuizDetails from './QuizDetails';
 import ErrorPage from '../ErrorPage';
 
