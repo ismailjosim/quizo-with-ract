@@ -2,8 +2,6 @@
 
 * Project Repo Link: (<https://github.com/programming-hero-web-course2/b6-quiz-crackerz-ismailjosim.git>)
 
-# Live site Link
-
 This project was Created with Tailwind and DaisyUI
 All Resource Link:-
 Tailwind CSS: [Create React App](https://tailwindcss.com/).
