@@ -39,9 +39,13 @@ const QuizBox = ({ quiz }) => {
                     to={`/home/${ id }`}
 
                     className=
-                    "inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 btn btn-info text-white"
+                    "font-semibold rounded-md btn btn-info text-white hover:scale-105 ease-in-out duration-300"
                 >
                     Start Now
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                    </svg>
+
                 </Link>
             </div>
         </div>

@@ -1,6 +1,6 @@
 # Assignment Project: 09 ==> Quiz Related Project Quizo
 
-# Project Repo Link: (<https://github.com/programming-hero-web-course2/b6-quiz-crackerz-ismailjosim.git>)
+* Project Repo Link: (<https://github.com/programming-hero-web-course2/b6-quiz-crackerz-ismailjosim.git>)
 
 # Live site Link
 

@@ -23,8 +23,6 @@ const QuestionBox = ({ questionItems }) => {
         );
     }
 
-
-
     return (
         <div className='mb-5 shadow-md bg-slate-100 px-3 py-5 rounded-md'>
             <div className='flex align-middle justify-between'>
