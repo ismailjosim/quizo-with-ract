@@ -7,12 +7,11 @@ import { QuizDataContext } from './Root';
 const Home = () => {
     const allQuiz = useContext(QuizDataContext);
 
-
     return (
         <div>
             <div className="relative">
                 <img
-                    src="https://images.pexels.com/photos/3747463/pexels-photo-3747463.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    src="https://canopylab.com/wp-content/uploads/2020/05/Working-with-adaptive-quizzes-A-beginners-guide.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                     className="absolute inset-0 object-cover w-full h-full"
                     alt=""
                 />
@@ -44,7 +43,6 @@ const Home = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 gap-5 my-10">
                     {
                         allQuiz.data.map(quiz => <QuizBox key={quiz.id} quiz={quiz} />)
-
                     }
                 </div>
             </div>

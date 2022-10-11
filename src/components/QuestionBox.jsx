@@ -1,10 +1,10 @@
 import React from 'react';
 import { toast } from 'react-toastify';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 import Item from './Item';
 
 const QuestionBox = ({ questionItems }) => {
-    const { options, id, question, correctAnswer } = questionItems;
+    const { options, question, correctAnswer } = questionItems;
 
     const handleOption = (option) => {
         const userAns = option;

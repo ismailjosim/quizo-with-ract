@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const QuizBox = ({ quiz }) => {
     const { id, name, logo, total } = quiz;
 
-
     return (
         <div className="overflow-hidden transition-shadow duration-300 border-2 border-transparent rounded-md">
             <img

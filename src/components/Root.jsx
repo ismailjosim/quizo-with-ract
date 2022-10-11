@@ -4,10 +4,8 @@ import Footer from './Footer';
 import Header from './Header';
 
 export const QuizDataContext = createContext([])
-
 const Root = () => {
     const quizData = useLoaderData();
-
 
     return (
         <QuizDataContext.Provider value={quizData}>
