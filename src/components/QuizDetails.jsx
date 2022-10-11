@@ -24,7 +24,7 @@ const QuizDetails = () => {
             {
                 questions.map(questionItems => <QuestionBox key={questionItems.id} questionItems={questionItems} />)
             }
-        </div >
+        </div>
     );
 };
 
