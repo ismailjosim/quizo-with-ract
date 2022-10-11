@@ -6,11 +6,13 @@ import Statistics from '../Statistics';
 import About from '../About';
 import QuizBox from '../QuizBox';
 import QuizDetails from './QuizDetails';
+import ErrorPage from '../ErrorPage';
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <ErrorPage />,
         loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
         children: [
             { path: '/', element: <Home /> },

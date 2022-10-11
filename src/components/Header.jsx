@@ -19,13 +19,13 @@ export const Headers = () => {
           </span>
         </Link>
 
-        <ul className="flex items-center hidden space-x-8 lg:flex">
+        <ul className="items-center space-x-8 lg:flex hidden">
           <li>
             <Link
               to="/home"
               aria-label="Our Home"
               title="Our Home"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-500"
             >
               Home
             </Link>
@@ -35,7 +35,7 @@ export const Headers = () => {
               to="/statistics"
               aria-label="Statistics"
               title="Statistics"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-500"
             >
               Statistics
             </Link>
@@ -45,7 +45,7 @@ export const Headers = () => {
               to="/blog"
               aria-label="Blog"
               title="Blog"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-500"
             >
               Blog
             </Link>
@@ -55,7 +55,7 @@ export const Headers = () => {
               to="/about"
               aria-label="About us"
               title="About us"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-500"
             >
               About us
             </Link>
