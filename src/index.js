@@ -8,8 +8,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
+  <div className='w-11/22 mx-auto'>
     <ToastContainer position='top-center' />
     <App />
-  </>
+  </div>
 );
