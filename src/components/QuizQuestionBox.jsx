@@ -1,11 +1,13 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 import Swal from 'sweetalert2';
-import Item from './Item';
+import QuizOptions from './QuizOptions';
 
-const QuestionBox = ({ questionItems }) => {
+
+const QuizQuestionBox = ({ questionItems }) => {
     const { options, question, correctAnswer } = questionItems;
 
+    // TODO: Option Handle Button function
     const handleOption = (option) => {
         const userAns = option;
         if (userAns === correctAnswer) {
@@ -15,6 +17,7 @@ const QuestionBox = ({ questionItems }) => {
         }
     }
 
+    // TODO: Correct Answer Handle Button function
     const handleRightAnswer = () => {
         Swal.fire(
             '',
@@ -38,10 +41,10 @@ const QuestionBox = ({ questionItems }) => {
             </div>
 
             {
-                options.map((option, index) => <Item key={index} option={option} handleOption={handleOption}></Item>)
+                options.map((option, index) => <QuizOptions key={index} option={option} handleOption={handleOption}></QuizOptions>)
             }
         </div>
     );
 };
 
-export default QuestionBox;
+export default QuizQuestionBox;

@@ -7,7 +7,7 @@ const Blog = () => {
             <div>
                 <div className="mx-5 my-5 px-3 py-5 rounded-md border-2 border-cyan-500">
                     <h3 className="font-semibold text-xl my-2 underline">
-                        <strong>Question 01</strong> : What is the Purpose react router?
+                        <strong>Question 01</strong> : What is the Purpose of React Router?
                     </h3>
                     <p className='leading-8 text-justify'>
                         <strong className='text-cyan-500 underline'>Answer:</strong>  A tool that allows you to handle routes in a web app, using dynamic routing. Dynamic routing takes place as the app is rendering on your machine, unlike the old routing architecture where the routing is handled in a configuration outside of a running app. React router implements a component-based approach to routing. It provides different routing components according to the needs of the application and platform. The following illustration shows how react router’s dynamic routing works as compared to traditional static routing.
@@ -15,7 +15,7 @@ const Blog = () => {
                 </div>
                 <div className="mx-5 my-5 px-3 py-5 rounded-md border-2 border-cyan-500">
                     <h3 className="font-semibold text-xl my-2 underline">
-                        <strong>Question 02</strong> : How to work context API?
+                        <strong>Question 02</strong>: Describe how context API work?
                     </h3>
                     <p className='leading-8 text-justify'>
                         <strong className='text-cyan-500 underline'>Answer:</strong>  Store the state in a Context value in the common ancestor component (called the Provider Component), and access it from as many components as needed (called Consumer Components), which can be nested at any depth under this ancestor. This solution has the same benefits as the Props solution, but because of what could be called “hierarchical scoping”, it has the added benefit that any component can access the state in any Context that is rooted above itself in React’s hierarchy, without this state needing to be passed down to it as props. React.js takes care of all the magic behind the scenes to make this work.

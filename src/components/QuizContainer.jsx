@@ -1,8 +1,8 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import QuestionBox from './QuestionBox';
+import QuizQuestionBox from './QuizQuestionBox';
 
-const QuizDetails = () => {
+const QuizContainer = () => {
     const allData = useLoaderData();
     const data = allData.data;
     const { questions, name, logo } = data;
@@ -17,10 +17,10 @@ const QuizDetails = () => {
                 <p className='font-normal text-xl'>Total questions : <span className='text-cyan-500 font-bold'>{questions.length}</span></p>
             </div>
             {
-                questions.map(questionItems => <QuestionBox key={questionItems.id} questionItems={questionItems} />)
+                questions.map(questionItems => <QuizQuestionBox key={questionItems.id} questionItems={questionItems} />)
             }
         </div>
     );
 };
 
-export default QuizDetails;
+export default QuizContainer;
